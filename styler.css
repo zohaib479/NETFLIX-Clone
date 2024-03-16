@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Micro+5&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@1,900&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Micro+5&family=Montserrat+Subrayada:wght@400;700&family=Montserrat:ital,wght@1,900&family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url(bg.jpg);
+    height: 70vh;
+    position: relative;
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: none;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.64;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav img {
+    color: red;
+    width: 130px;
+    position: relative;
+    z-index: 10;
+
+}
+
+nav button {
+    z-index: 10;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    width: 60vw;
+    margin: auto ;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.hero {
+    height: cal(100%-100px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+    position: relative;
+    font-family: "Martel Sans", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    gap: 23px;
+    padding: 30px;
+}
+
+.hero> :first-child/* >is lyai use hota h k immediate first child*/
+    {
+    font-family: "poppins", sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+
+}
+
+.hero> :nth-child(2) {
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero:nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+}
+
+.seperation {
+    margin-top: 105px;
+    height: 8px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 50;
+
+}
+
+.btn {
+    padding: 3px 8px;
+    font-family: "poppins", sans-serif;
+    font-weight: 400;
+    border-radius: 4px;
+    background-color: rgba(248, 243, 243, 0.021);
+    border:1px solid white;
+    cursor: pointer;
+    color: white;
+}
+.red-btn {
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.btn-red-sm {
+    background-color: red;
+    color: white;
+}
+
+.main input {
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    color: white;
+    border-radius: 4px;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+}
+
+.hero-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+
+
+}
+.first{
+    display: flex;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    color: white;
+    align-items: center;
+}
+
+.secimg{position: relative;}
+.secimg img
+{
+    width: 555px;
+    position: relative;
+    z-index: 10;
+    
+}
+.secimg video{
+    position: absolute;
+    top:51px;
+    right: 0px;    
+    width: 555px;
+}
+section.first > div {
+    display: flex;
+    flex-direction: column;
+    padding: 34px 0px;
+}
+.first > div :first-child{
+  font-size: 48px;
+  font-weight: bolder;
+}
+.first > div :nth-child(2){
+    font-size: 24px;
+   
+  }
+  section.faq{
+    background-color: black;
+    color: white;
+    padding: 34px 5px;
+    font-size: 24px;
+    line-height: 2px;
+   
+  }
+.faq  h2{
+  text-align: center;
+  font-size: 48px;
+  }
+ .FAQbox{
+    display: flex;
+    justify-content: space-between;
+    margin: 34px auto;
+    background-color: grey;
+    padding: 34px;
+    max-width: 60vw;
+    cursor: pointer;
+
+ } 
+ .FAQbox:hover{
+    background-color: #414141;
+    transition: all 0.4s ease-in-out ;
+ }
+ footer{
+    color: white;
+    margin: auto;
+    max-width: 60vw;
+    padding: 34px;
+ }
+ .question{
+    padding: 34px 10px;
+ }
+ .footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+   
+}
+
+ footer a{
+   text-decoration: none;
+   color: white;
+   font-size: 14px;
+ }
+
+.footer-item{
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+@media screen and (max-width: 1300px) {
+    .footer{
+        grid-template-columns: 1fr 1fr ;
+        gap:25px ;
+    }
+}
+@media screen and (max-width: 1300px) {
+    nav{
+        max-width: 90vw;
+    }
+    .first{
+        flex-wrap: wrap;
+    }
+    .secimg img
+    {
+        width: 305px;  
+    }
+    .secimg video{   
+        width: 305px;
+    }
+    .hero> :first-child/* >is lyai use hota h k immediate first child*/
+    {
+    font-size: 32px;
+}
+.hero> :nth-child(2)
+{
+    font-size:18px ;
+}
+.hero> :nth-child(3)
+{
+    font-size:18px ;
+}
+.hero-btn{
+    flex-direction: column;
+}
+.faq h2{
+    font-size: 32px;
+}
+footer{
+    max-width: 90vw;
+}
+.footer-item{
+    align-items: center;
+}
+.pahly{
+    .seperation{
+        opacity: 0;
+    }
+}
+}
+ 
